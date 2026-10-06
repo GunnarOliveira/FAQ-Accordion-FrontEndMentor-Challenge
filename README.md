@@ -12,8 +12,6 @@
 
 ## 📸 Screenshots
 
-### Preview
-
 - Desktop Preview
 <p align="center">
   <img src="./screenshots/desktop-demo.png" width="100%">
