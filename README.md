@@ -2,13 +2,13 @@
 
  A responsive FAQ accordion solution for the Frontend Mentor challenge, built with semantic HTML5, modern CSS, and vanilla JavaScript.
 
----
+
 
 ## 📌 Live Demo
 
  🔗 [Click here to view the live project](https://gunnaroliveira.github.io/FAQ-Accordion-FrontEndMentor-Challenge/)
 
----
+
 
 ## 📸 Screenshots
 
