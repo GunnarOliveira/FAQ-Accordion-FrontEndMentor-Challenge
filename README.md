@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <img src="./screenshots/mobile-demo.png" width="100%">
+  <img src="./screenshots/mobile-demo.png">
 </p>
 
 ---
