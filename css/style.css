@@ -1,0 +1,101 @@
+:root {
+  --color-01: hsl(0, 100%, 100%);
+  --color-02: hsl(275, 100%, 97%);
+  --color-03: hsl(292, 16%, 49%);
+  --color-04: hsl(292, 42%, 14%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+body {
+  height: 100vh;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../assets/images/background-pattern-desktop.svg") repeat-x
+    var(--color-02);
+}
+.main {
+  max-width: 520px;
+  padding: 40px;
+  background: var(--color-01);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(162, 153, 168, 0.1);
+}
+.title {
+  font-size: 3rem;
+  color: var(--color-04);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.title img {
+  max-width: 90%;
+}
+.faq-list dt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-04);
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.faq-list dt ~ dt {
+  border-top: 2px solid var(--color-02);
+}
+.faq-list dt img {
+  margin-left: 20px;
+}
+.faq-list dd {
+  color: var(--color-03);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.js .js-accordion dd {
+  display: none;
+  animation: show 0.3s forwards;
+}
+.js .js-accordion dd.active {
+  display: block;
+}
+@media (max-width: 750px) {
+  .main {
+    padding: 20px;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  .faq-list dt {
+    gap: 30px;
+  }
+  .faq-list dd {
+    max-width: 35ch;
+  }
+  body {
+    padding: 20px;
+    background: url("../assets/images/background-pattern-mobile.svg") repeat-x
+      var(--color-02);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: matrix3d(-30px, 0px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: matrix3d(0px, 0px, 0px);
+  }
+}
